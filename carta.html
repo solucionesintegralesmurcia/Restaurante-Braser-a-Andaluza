@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta — Braseria Andaluza</title>
+<meta name="description" content="Carta de Braseria Andaluza: carnes a la brasa, entrantes y postres.">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ajustes específicos de la carta en móvil (página ligera para el QR) */
+  .carta-page{padding-top:96px; padding-bottom:80px;}
+  .carta-page__head{margin-bottom:6px;}
+  .carta-page .tabs{position:sticky; top:56px; background:var(--ink); z-index:10; padding-top:8px;}
+  .back-link{
+    display:inline-flex; align-items:center; gap:6px;
+    font-family:var(--mono); font-size:0.78rem; color:var(--cream-dim);
+    margin-bottom:18px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__brand">BRASERÍA <span>ANDALUZA</span></a>
+    <div class="nav__cta">
+      <a href="tel:+34644077362" class="btn btn--ghost btn--sm">Llamar</a>
+      <a href="https://wa.me/34644077362?text=Hola%2C%20querr%C3%ADa%20reservar%20mesa%20en%20Braser%C3%ADa%20Andaluza" target="_blank" rel="noopener" class="btn btn--ember btn--sm">Reservar</a>
+    </div>
+  </div>
+</nav>
+
+<section class="carta carta-page">
+  <div class="container">
+    <a href="index.html" class="back-link">← Volver a la web</a>
+    <div class="carta-page__head">
+      <span class="eyebrow">Carta</span>
+      <h1 class="section-title">Braseria Andaluza</h1>
+      <p class="section-lede">Carnes a la brasa, entrantes para compartir y postre casero. Las croquetas y pinchos se cobran por unidad.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab is-active" data-tab="carnes" role="tab">Carnes a la Brasa</button>
+      <button class="tab" data-tab="entrantes" role="tab">Entrantes</button>
+      <button class="tab" data-tab="postres" role="tab">Postres</button>
+    </div>
+
+    <!-- CARNES -->
+    <div class="menu-panel is-active" id="panel-carnes">
+      <div class="menu-group">
+        <div class="menu-group__title">Carnes a la brasa</div>
+        <div class="menu-row"><span class="menu-row__name">Pollo</span><span class="menu-row__leader"></span><span class="menu-row__price">10,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Conejo</span><span class="menu-row__leader"></span><span class="menu-row__price">12,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Cabrito</span><span class="menu-row__leader"></span><span class="menu-row__price">15,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Costillas de Cordero</span><span class="menu-row__leader"></span><span class="menu-row__price">14,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Pluma Ibérica</span><span class="menu-row__leader"></span><span class="menu-row__price">15,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Secreto Ibérico</span><span class="menu-row__leader"></span><span class="menu-row__price">14,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Lagarto</span><span class="menu-row__leader"></span><span class="menu-row__price">13,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Costillar de Cerdo</span><span class="menu-row__leader"></span><span class="menu-row__price">12,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Solomillo de Ternera</span><span class="menu-row__leader"></span><span class="menu-row__price">19,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Entrecot de Ternera</span><span class="menu-row__leader"></span><span class="menu-row__price">17,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Chuletón Añojo (500g)</span><span class="menu-row__leader"></span><span class="menu-row__price">20,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Ciervo en Salsa</span><span class="menu-row__leader"></span><span class="menu-row__price">15,00 €</span></div>
+        <div class="menu-row">
+          <span class="menu-row__name">Parrillada de Carne
+            <span class="menu-row__note">Pollo, churrasco de ternera, secreto, chorizo y morcilla</span>
+          </span>
+          <span class="menu-row__leader"></span><span class="menu-row__price">18,00 €</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENTRANTES -->
+    <div class="menu-panel" id="panel-entrantes">
+      <div class="menu-group">
+        <div class="menu-group__title">Croquetas caseras · unidad</div>
+        <div class="menu-row"><span class="menu-row__name">Cochinillo y Manzana</span><span class="menu-row__leader"></span><span class="menu-row__price">1,80 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Gamba</span><span class="menu-row__leader"></span><span class="menu-row__price">1,80 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Pollo al Curry</span><span class="menu-row__leader"></span><span class="menu-row__price">1,80 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Tinta de Calamar</span><span class="menu-row__leader"></span><span class="menu-row__price">1,80 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Rabo de Toro</span><span class="menu-row__leader"></span><span class="menu-row__price">1,80 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Verduras y Queso</span><span class="menu-row__leader"></span><span class="menu-row__price">1,80 €</span></div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group__title">Para compartir</div>
+        <div class="menu-row"><span class="menu-row__name">Embutido Casero</span><span class="menu-row__leader"></span><span class="menu-row__price">10,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Ensaladilla Rusa</span><span class="menu-row__leader"></span><span class="menu-row__price">4,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Alcachofas en Tempura</span><span class="menu-row__leader"></span><span class="menu-row__price">8,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Verduras en Tempura</span><span class="menu-row__leader"></span><span class="menu-row__price">10,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Queso Caramelizado</span><span class="menu-row__leader"></span><span class="menu-row__price">9,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Patatas Gratén</span><span class="menu-row__leader"></span><span class="menu-row__price">8,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Revuelto de Setas con Solomillo y Gambas</span><span class="menu-row__leader"></span><span class="menu-row__price">11,00 €</span></div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group__title">Cazuelas y del mar</div>
+        <div class="menu-row"><span class="menu-row__name">Cazuela al Ajillo</span><span class="menu-row__leader"></span><span class="menu-row__price">11,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Cazuela de Gambas</span><span class="menu-row__leader"></span><span class="menu-row__price">13,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Almejas al Ajillo</span><span class="menu-row__leader"></span><span class="menu-row__price">14,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Mejillones Ajillo o Vapor</span><span class="menu-row__leader"></span><span class="menu-row__price">9,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Calamares Andaluza</span><span class="menu-row__leader"></span><span class="menu-row__price">12,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Chopitos</span><span class="menu-row__leader"></span><span class="menu-row__price">10,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Rejos</span><span class="menu-row__leader"></span><span class="menu-row__price">10,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Atún en Adobo</span><span class="menu-row__leader"></span><span class="menu-row__price">10,00 €</span></div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group__title">Pinchos y tapas · unidad</div>
+        <div class="menu-row"><span class="menu-row__name">Tigre</span><span class="menu-row__leader"></span><span class="menu-row__price">2,20 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Caballito</span><span class="menu-row__leader"></span><span class="menu-row__price">2,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Chorizo / Morcilla</span><span class="menu-row__leader"></span><span class="menu-row__price">2,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Pincho de Secreto</span><span class="menu-row__leader"></span><span class="menu-row__price">2,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Pincho Moruno</span><span class="menu-row__leader"></span><span class="menu-row__price">2,50 €</span></div>
+      </div>
+    </div>
+
+    <!-- POSTRES -->
+    <div class="menu-panel" id="panel-postres">
+      <div class="menu-group">
+        <div class="menu-group__title">Postres caseros</div>
+        <div class="menu-row"><span class="menu-row__name">De la Abuela</span><span class="menu-row__leader"></span><span class="menu-row__price">4,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Zanahoria</span><span class="menu-row__leader"></span><span class="menu-row__price">4,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Almendra</span><span class="menu-row__leader"></span><span class="menu-row__price">4,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Moka y Chocolate</span><span class="menu-row__leader"></span><span class="menu-row__price">4,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Chocolate y Crema de Coco</span><span class="menu-row__leader"></span><span class="menu-row__price">4,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Almendra y Chocolate</span><span class="menu-row__leader"></span><span class="menu-row__price">4,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Alejandro</span><span class="menu-row__leader"></span><span class="menu-row__price">4,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Coulant de Chocolate</span><span class="menu-row__leader"></span><span class="menu-row__price">5,50 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Brownie con Nueces</span><span class="menu-row__leader"></span><span class="menu-row__price">5,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Flan de Café y Baileys</span><span class="menu-row__leader"></span><span class="menu-row__price">4,00 €</span></div>
+        <div class="menu-row"><span class="menu-row__name">Arroz con Leche</span><span class="menu-row__leader"></span><span class="menu-row__price">4,00 €</span></div>
+      </div>
+    </div>
+
+    <p class="menu-note">Precios de referencia, sujetos a cambio. IVA incluido.</p>
+
+    <div style="margin-top:48px;">
+      <a href="https://wa.me/34644077362?text=Hola%2C%20querr%C3%ADa%20reservar%20mesa%20en%20Braser%C3%ADa%20Andaluza" target="_blank" rel="noopener" class="btn btn--ember btn--block">Reservar mesa por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
